@@ -12,25 +12,25 @@ class Config(object):
 
  
 
-    BLOB_ACCOUNT = os.environ.get('BLOB_ACCOUNT') or 'dodarticlecms'
+    BLOB_ACCOUNT = os.environ.get('BLOB_ACCOUNT') or 'blobstoragetrinhcv'
 
-    BLOB_STORAGE_KEY = os.environ.get('BLOB_STORAGE_KEY') or '681sQ/AJgAe2WVhrrc0W7pxWJTV2oj4ncniVTD2Xb4u2A+h6gbXYlfTbGEHrjQzzdo5fELqnWDgo+AStzt03VQ=='
+    BLOB_STORAGE_KEY = os.environ.get('BLOB_STORAGE_KEY') or 'jqQ35ao8xLsyqLBztzosNIIQC3NIpNTlytlzU8AH15EPixai4TIw9xEq7IMR0ALFfEVEybWpYZ9T+ASt0ktkWg=='
 
-    BLOB_CONTAINER = os.environ.get('BLOB_CONTAINER') or 'dod-article-cms-blob'
+    BLOB_CONTAINER = os.environ.get('BLOB_CONTAINER') or 'images'
 
  
 
-    SQL_SERVER = os.environ.get('SQL_SERVER') or 'dod-article-cms-dbserver.database.windows.net'
+    SQL_SERVER = os.environ.get('SQL_SERVER') or 'trinhcvcms.database.windows.net'
 
-    SQL_DATABASE = os.environ.get('SQL_DATABASE') or 'dod-article-cms-db'
+    SQL_DATABASE = os.environ.get('SQL_DATABASE') or 'trinhcvcms'
 
-    SQL_USER_NAME = os.environ.get('SQL_USER_NAME') or 'dod'
+    SQL_USER_NAME = os.environ.get('SQL_USER_NAME') or 'trinh'
 
-    SQL_PASSWORD = os.environ.get('SQL_PASSWORD') or 'abcde12345-'
+    SQL_PASSWORD = os.environ.get('SQL_PASSWORD') or 'Cuahoidcna37@'
 
     # Below URI may need some adjustments for driver version, based on your OS, if running locally
 
-    SQLALCHEMY_DATABASE_URI = 'mssql+pyodbc://' + SQL_USER_NAME + '@' + SQL_SERVER + ':' + SQL_PASSWORD + '@' + SQL_SERVER + ':1433/' + SQL_DATABASE  + '?driver=ODBC+Driver+17+for+SQL+Server'
+    SQLALCHEMY_DATABASE_URI = 'mssql+pyodbc://' + SQL_USER_NAME + '@' + SQL_SERVER + ':' + SQL_PASSWORD + '@' + SQL_SERVER + ':1433/' + SQL_DATABASE  + '?driver=ODBC+Driver+1+for+SQL+Server'
 
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
@@ -40,7 +40,7 @@ class Config(object):
 
     ### As adapted from: https://github.com/Azure-Samples/ms-identity-python-webapp ###
 
-    CLIENT_SECRET = "~6C8Q~AvV.wULgW21bp4hspyjFAN0oUvFukkgbnG"
+    CLIENT_SECRET = "Hap8Q~nyRM9-Pd5xwKFHzslL4QRPyqFam1df7ck~"
 
     # In your production app, Microsoft recommends you to use other ways to store your secret,
 
@@ -56,13 +56,13 @@ class Config(object):
 
  
 
-    AUTHORITY = "https://login.microsoftonline.com/5244b6c3-3240-4504-8ebf-d6ec97e7eec2"  # For multi-tenant app, else put tenant name
+    AUTHORITY = "https://login.microsoftonline.com/f958e84a-92b8-439f-a62d-4f45996b6d07"  # For multi-tenant app, else put tenant name
 
     # AUTHORITY = "https://login.microsoftonline.com/Enter_the_Tenant_Name_Here"
 
  
 
-    CLIENT_ID = "fd752ed1-26eb-4200-8308-491c2dd61ee7"
+    CLIENT_ID = "790c833a-70cd-4dc7-bf23-4cd4dad9e851"
 
  
 
